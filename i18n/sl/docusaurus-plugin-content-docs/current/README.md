@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
+title: Domov | Uvod
 ---
 
-# Tutorial Intro
+# Domov | Uvod
 
 Kaj počnete?

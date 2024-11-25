@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
+title: Strona główna | Wprowadzenie
 ---
 
-# Tutorial Intro
+# Strona główna | Wprowadzenie
 
 Co ty wyprawiasz?

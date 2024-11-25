@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
+title: Home | Einleitung
 ---
 
-# Tutorial Intro
+# Home | Einleitung
 
 Was soll das?
