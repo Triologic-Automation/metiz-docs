@@ -38,3 +38,41 @@
   display: flex;
   justify-content: center;
 }
+
+img {
+  max-width: 100%;
+}
+
+.imgSized {
+  max-width: 350px;
+}
+
+.liGreenNumbers li::marker {
+  color: green;
+}
+
+.A ol {
+  list-style: none;
+  counter-reset: chapter 1;
+}
+.A ol li + li {
+  counter-increment: chapter 1;
+  list-style: none;
+}
+.A ol li:before {
+  content: "A" counter(chapter) ". ";
+  color: blue;
+}
+
+.B ol {
+  list-style: none;
+  counter-reset: chapter 1;
+}
+.B ol li + li {
+  counter-increment: chapter 1;
+  list-style: none;
+}
+.B ol li:before {
+  content: "B" counter(chapter) ". ";
+  color: blue;
+}

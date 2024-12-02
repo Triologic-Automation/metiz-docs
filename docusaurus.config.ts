@@ -71,6 +71,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
+    docs: { sidebar: { hideable: true } },
     navbar: {
       title: "Metiz Docs",
       logo: {
@@ -94,6 +95,7 @@ const config: Config = {
     footer: {
       logo: {
         src: "img/logos/triologic.svg",
+        srcDark: "img/logos/triologic.dark.svg",
         alt: "Logo Triologic",
         height: 50,
         href: "https://www.triologic.at/",

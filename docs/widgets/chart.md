@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Chart Widget
+title: Chart
 ---
 
 # Chart Widget
