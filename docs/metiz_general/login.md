@@ -1,0 +1,28 @@
+---
+sidebar_position: 1
+title: System Access
+---
+
+![Metiz Logo](/img/logos/logo.svg)
+
+## Technical Requirements
+
+To be able to use Metiz optimally, we recommend the use of an up-to-date web browser for the application on the desktop. Metiz was tested primarily with **Google Chrome, Safari and Mozilla Firefox**. With all other web browsers, there may be deviations in the presentation and functionality.
+
+For mobile applications, we recommend devices with the Android and iOS operating system and the above-mentioned web browsers. Again, there may be deviations in presentation and functionality when used in a different software environment.
+
+## Login  
+
+Metiz can be accessed at the following address: https://metiz.triologic.at/login
+
+Your user data will be assigned to you by Triologic GmbH. With this information, you can sign up with Metiz. To do this, an e-mail address or a username and a matching password must be entered.
+
+If you have forgotten your user data, please get in touch with Triologic (office@triologic.at) to request a new password.
+
+![Login Form](/img/metiz/login.png)  
+Figure 2 - Overview Login
+
+There are 2 different Types of Users:
+
+Admin: An administrator can assign serial numbers to TML  
+User: Can make settings that are important for the operation of the system.

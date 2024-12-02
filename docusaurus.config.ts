@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config: Config = {
   title: "Metiz Docs",
   tagline: "Metiz Documentation",
-  favicon: "img/favicon.ico",
+  favicon: "img/logos/favicon.ico",
 
   // Set the production url of your site here
   url: "https://github.com",
@@ -75,7 +75,8 @@ const config: Config = {
       title: "Metiz Docs",
       logo: {
         alt: "Logo",
-        src: "img/logo.svg",
+        src: "img/logos/logo.svg",
+        srcDark: "img/logos/logo.dark.svg",
       },
       items: [
         /*{
@@ -91,44 +92,28 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      logo: {
+        src: "img/logos/triologic.svg",
+        alt: "Logo Triologic",
+        height: 50,
+        href: "https://www.triologic.at/",
+      },
+      style: "light",
       links: [
         {
-          title: "Docs",
+          title: "About",
           items: [
             {
-              label: "Home",
-              to: "/docs/",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Imprint",
+              to: "/imprint",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Homepage",
+              href: "https://www.triologic.at/",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/triologic-automation-gmbh/",
             },
           ],
         },

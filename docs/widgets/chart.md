@@ -12,4 +12,4 @@ This [**`Metiz`**](http://172.16.66.27/) widget consists of:
 
 ## Image
 
-![Chart Widget](/img/widgets/chart_full.png)
+![Chart Widget](/img/widgets_plain/chart_full.png)
