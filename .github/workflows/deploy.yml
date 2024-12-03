@@ -2,10 +2,10 @@ name: Deploy to GitHub Pages
 
 on:
   push:
+    tags:
+      - "*.*.*"
     branches:
       - main
-    tags:
-      - "*.*.*" # Matches versions like 1.0.0
 
 jobs:
   build:
