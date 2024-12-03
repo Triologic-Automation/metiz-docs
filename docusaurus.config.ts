@@ -120,7 +120,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Triologic Automation GmbH`,
+      copyright: `Copyright © 2024-${new Date().getFullYear()} Triologic Automation GmbH`,
     },
     prism: {
       theme: prismThemes.github,

@@ -4,8 +4,11 @@ on:
   push:
     branches:
       - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+    tags:
+      - "*.*.*" # Matches versions like 1.0.0
+      - "*.*.*-*" # Matches pre-releases like 1.0.0-alpha
+      - "*.*.*+*" # Matches build metadata like 1.0.0+001
+      - "*.*.*-*+*" # Matches pre-releases with build metadata like 1.0.0-alpha+001
 
 jobs:
   build:
