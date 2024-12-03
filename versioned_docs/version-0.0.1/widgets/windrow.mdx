@@ -1,0 +1,41 @@
+---
+sidebar_position: 1
+title: Windrow (Box)
+---
+
+import Settings from "../_shared_widget_content/settings_batched.mdx";
+import AerationControl from "../_shared_widget_content/aeration_control.mdx";
+import IrrigationControl from "../_shared_widget_content/irrigation_control.mdx";
+
+The widget displays all measured values as well as status information of Windrow/Box and allows to change aeration and irrigation (optional) operation mode.
+
+<div class="imgSized1">
+  ![Windrow Widget](/img/widgets_numbered/WindrowIrrigationWidget.png)
+</div>
+
+## Controls/Displays
+
+<ol class="liGreenNumbers">
+  <li>Enter settings menu </li>
+  <li>Actual batch name </li>
+  <li>
+    Measured temperature of sensor T3 (Further info:
+    [TML](../metiz_general/tml.mdx))
+  </li>
+  <li>Measured temperature of sensor T2 </li>
+  <li>Measured temperature of sensor T1 </li>
+  <li>Signal strength of the TML connection </li>
+  <li>Timestamp of the last data transmission </li>
+  <li>Pressure at aeration blower (OPTIONAL) </li>
+  <li>Door status (OPTIONAL) </li>
+  <li>Irrigation amount (OPTIONAL) </li>
+  <li>Time of next Irrigation cycle (OPTIONAL) </li>
+  <li>Status of the temperature recording </li>
+  <li>Number of windrow/box </li>
+</ol>
+
+<AerationControl />
+
+<IrrigationControl />
+
+<Settings />
