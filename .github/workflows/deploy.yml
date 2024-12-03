@@ -6,9 +6,6 @@ on:
       - main
     tags:
       - "*.*.*" # Matches versions like 1.0.0
-      - "*.*.*-*" # Matches pre-releases like 1.0.0-alpha
-      - "*.*.*+*" # Matches build metadata like 1.0.0+001
-      - "*.*.*-*+*" # Matches pre-releases with build metadata like 1.0.0-alpha+001
 
 jobs:
   build:
