@@ -17,7 +17,7 @@
     "rel:major": "pnpm prerel && pnpm version major --workspaces --no-workspaces-update --include-workspace-root --no-git-tag-version && pnpm seqrel",
     "rel:minor": "pnpm prerel && pnpm version minor --workspaces --no-workspaces-update --include-workspace-root --no-git-tag-version && pnpm seqrel",
     "rel:patch": "pnpm prerel && pnpm version patch --workspaces --no-workspaces-update --include-workspace-root --no-git-tag-version && pnpm seqrel",
-    "seqrel": "git add . && git commit -m $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+    "seqrel": "docusaurus docs:version $npm_package_version && git add . && git commit -m $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
   "dependencies": {
     "@docusaurus/core": "3.6.3",
