@@ -1,22 +1,27 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: Windrow (Box)
 ---
 
-## Image
+import Settings from "../_shared_widget_content/settings_batched.mdx";
+import AerationControl from "../_shared_widget_content/aeration_control.mdx";
+import IrrigationControl from "../_shared_widget_content/irrigation_control.mdx";
+
+The widget displays all measured values as well as status information of Windrow/Box and allows to change aeration and irrigation (optional) operation mode.
 
 <div class="imgSized1">
   ![Windrow Widget](/img/widgets_numbered/WindrowIrrigationWidget.png)
 </div>
 
-## Description
-
-The widget displays all measured values and status information of Windrow/Box and allows to change aeration and irrigation (optional) operation mode.
+## Controls/Displays
 
 <ol class="liGreenNumbers">
   <li>Enter settings menu </li>
   <li>Actual batch name </li>
-  <li>Measured temperature of sensor T3 </li>
+  <li>
+    Measured temperature of sensor T3 (Further info:
+    [TML](../metiz_general/tml.mdx))
+  </li>
   <li>Measured temperature of sensor T2 </li>
   <li>Measured temperature of sensor T1 </li>
   <li>Signal strength of the TML connection </li>
@@ -29,25 +34,8 @@ The widget displays all measured values and status information of Windrow/Box an
   <li>Number of windrow/box </li>
 </ol>
 
-Aeration:
+<AerationControl />
 
-<div class="A">
-  <ol class="">
-    <li>Fan symbol (rotates during operation)</li>
-    <li>Manuel Start button (continuous operation)</li>
-    <li>Stop button</li>
-    <li>Automatic/temperature mode according to temperatures in material </li>
-    <li>Interval mode</li>
-  </ol>
-</div>
+<IrrigationControl />
 
-Irrigation (OPTIONAL):
-
-<div class="B">
-  <ol class="">
-    <li>Status symbol of irrigation </li>
-    <li>Manuel Start button (continuous operation) </li>
-    <li>Stop button </li>
-    <li>Automatic mode </li>
-  </ol>
-</div>
+<Settings />

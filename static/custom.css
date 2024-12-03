@@ -59,13 +59,29 @@ img {
   max-width: 350px;
 }
 
+.imgSized4 {
+  max-width: 450px;
+}
+
+.imgSized5 {
+  max-width: 550px;
+}
+
+.imgSized6 {
+  max-width: 650px;
+}
+
+.imgSized7 {
+  max-width: 750px;
+}
+
 .liGreenNumbers li::marker {
   color: green;
 }
 
 .A ol {
   list-style: none;
-  counter-reset: chapter 1;
+  counter-reset: chapter 0;
 }
 .A ol li + li {
   counter-increment: chapter 1;
@@ -78,7 +94,7 @@ img {
 
 .B ol {
   list-style: none;
-  counter-reset: chapter 1;
+  counter-reset: chapter 0;
 }
 .B ol li + li {
   counter-increment: chapter 1;
@@ -87,4 +103,9 @@ img {
 .B ol li:before {
   content: "B" counter(chapter) ". ";
   color: blue;
+}
+
+.flex-equaly {
+  display: flex;
+  justify-content: flex-start;
 }

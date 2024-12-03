@@ -1,6 +1,6 @@
 {
   "name": "metiz-docs",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
