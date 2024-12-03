@@ -43,7 +43,19 @@ img {
   max-width: 100%;
 }
 
-.imgSized {
+.imgSized0 {
+  max-width: 250px;
+}
+
+.imgSized1 {
+  max-width: 350px;
+}
+
+.imgSized2 {
+  max-width: 350px;
+}
+
+.imgSized3 {
   max-width: 350px;
 }
 
