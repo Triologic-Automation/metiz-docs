@@ -5,3 +5,5 @@ slug: /
 ---
 
 What's the point?  
+
+Check if action is triggered.
