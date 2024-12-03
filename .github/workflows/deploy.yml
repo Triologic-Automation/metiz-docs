@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main'
     name: Build Docusaurus
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +32,6 @@ jobs:
           path: build
 
   deploy:
-    if: github.ref == 'refs/heads/main'
     name: Deploy to GitHub Pages
     needs: build
 
