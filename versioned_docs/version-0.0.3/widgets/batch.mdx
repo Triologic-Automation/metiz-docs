@@ -1,0 +1,47 @@
+---
+sidebar_position: 10
+title: Batch
+---
+
+import BatchSettings from "../_shared_widget_content/settings_batch.mdx";
+import ChartSettings from "../_shared_widget_content/settings_chart.mdx";
+
+The widget displays all measured values as well as status information.
+This widget is basically a derivation from [**Windrow/Box Widget**](./windrow). This is why the same information applies.
+
+<div class="imgSized1">
+  ![Batch Widget](/img/widgets_numbered/WindrowSimpleBatched.png)
+</div>
+
+<ol class="liGreenNumbers">
+  <li>Enter settings menu </li>
+  <li>Actual batch name </li>
+  <li>Number of windrow/box </li>
+  <li>Measured temperature of sensor T3 (Further info: [🔗TML](../metiz_general/tml.mdx)) </li>
+  <li>Measured temperature of sensor T2 (Further info: [🔗TML](../metiz_general/tml.mdx)) </li>
+  <li>Measured temperature of sensor T1 (Further info: [🔗TML](../metiz_general/tml.mdx)) </li>
+  <li>Signal strength of the TML connection </li>
+  <li>Timestamp of the last data transmission </li>
+  <li>Status of the temperature recording </li>
+</ol>
+
+## Settings
+
+### TML Probe Numbering
+
+<div class="imgSized3">
+  ![TML Numbering](/img/operator_panel/tmlWifi.png)
+</div>
+
+### TML Probe SMS Settings
+
+<div class="imgSized0">
+  ![Probe SMS Settings](/img/operator_panel/tmlProbe.png)
+</div>
+
+1. Activate Probe for SMS Alerting
+2. If probe is not sending this time long you get SMS alerting
+
+<BatchSettings />
+
+<ChartSettings />
