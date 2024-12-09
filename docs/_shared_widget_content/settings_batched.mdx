@@ -1,25 +1,13 @@
+import BatchSettings from "./settings_batch.mdx";
+import ChartSettings from "./settings_chart.mdx";
+
 ## Settings Panel
 
 Press the gear icon to access the settings.
 
 **Important: Only an administrator can set the TML serial numbers and locate the TML probes to box or windrow. Contact for changes Triologic or Compost Systems.**
 
-### Batch
-
-:::tip
-If no batch is created at box/windrow, the temperature recording is inactive.
-:::
-
-<div class="imgSized0">
-  ![Batched Setting 1](/img/operator_panel/batch_create.png)
-</div>
-<div class="imgSized0">
-  ![Batched Setting 1](/img/operator_panel/batch_remove.png)
-</div>
-
-1. Enter batch name (can be free chosen)
-2. Click Create Batch to set batch name and start temperature recording --> Temp. Record active
-3. Click Take out Batch to stop temperature recording --> Temp. Record inactive
+<BatchSettings />
 
 ### Interval Mode
 
@@ -69,20 +57,4 @@ If no batch is created at box/windrow, the temperature recording is inactive.
 1. Set amount per day for automatic irrigation [l]
 2. Set irrigation cycles per day.
 
-### Chart
-
-<div class="imgSized0">![Batched Setting 1](/img/operator_panel/chart.png)</div>
-
-1. Klick Show Chart in Full Screen to display chart in a new window.
-2. Set the sanitization temperature which is shown as a red line in chart diagram.
-3. Klick for export chart
-
-#### Chart in full screen mode
-
-<div class="imgSized3">
-  ![Batched Setting 1](/img/operator_panel/chart_full.png)
-</div>
-
-1. Set start date
-2. Set end date
-3. Button for export of chart. Visible chart gets exported to pdf, jpg, png or svg format.
+<ChartSettings />

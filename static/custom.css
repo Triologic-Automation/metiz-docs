@@ -79,6 +79,32 @@ img {
   color: green;
 }
 
+.Z ol {
+  list-style: none;
+  counter-reset: chapter 0;
+}
+.Z ol li + li {
+  counter-increment: chapter 1;
+  list-style: none;
+}
+.Z ol li:before {
+  content: "" counter(chapter) ". ";
+  color: green;
+}
+
+.Z2 ol {
+  list-style: none;
+  counter-reset: chapter 1;
+}
+.Z2 ol li + li {
+  counter-increment: chapter 1;
+  list-style: none;
+}
+.Z2 ol li:before {
+  content: "" counter(chapter) ". ";
+  color: green;
+}
+
 .A ol {
   list-style: none;
   counter-reset: chapter 0;
@@ -88,6 +114,19 @@ img {
   list-style: none;
 }
 .A ol li:before {
+  content: "A" counter(chapter) ". ";
+  color: blue;
+}
+
+.A2 ol {
+  list-style: none;
+  counter-reset: chapter 1;
+}
+.A2 ol li + li {
+  counter-increment: chapter 1;
+  list-style: none;
+}
+.A2 ol li:before {
   content: "A" counter(chapter) ". ";
   color: blue;
 }
@@ -108,4 +147,8 @@ img {
 .flex-equaly {
   display: flex;
   justify-content: flex-start;
+}
+
+.blend {
+  mix-blend-mode: color;
 }
