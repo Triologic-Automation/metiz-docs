@@ -94,6 +94,17 @@ const config: Config = {
           type: "docsVersionDropdown",
           position: "right",
         },
+        {
+          type: "doc",
+          label: "Home",
+          docId: "README",
+          position: "left",
+        },
+        {
+          label: "Metiz",
+          href: "https://portal.metiz-app.com/",
+          position: "left",
+        },
       ],
     },
     footer: {
@@ -107,12 +118,8 @@ const config: Config = {
       style: "light",
       links: [
         {
-          title: "About",
+          title: "TrioLogic",
           items: [
-            {
-              label: "Imprint",
-              to: "/imprint",
-            },
             {
               label: "Homepage",
               href: "https://www.triologic.at/",
@@ -123,8 +130,21 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: "About",
+          items: [
+            {
+              label: "Imprint",
+              to: "/imprint",
+            },
+            {
+              label: "Metiz",
+              href: "https://portal.metiz-app.com/",
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © 2024-${new Date().getFullYear()} Triologic Automation GmbH`,
+      copyright: `Copyright © ${new Date().getFullYear()} Triologic Automation GmbH`,
     },
     prism: {
       theme: prismThemes.github,
