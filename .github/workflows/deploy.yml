@@ -15,15 +15,17 @@ jobs:
           fetch-depth: 0
       - uses: pnpm/action-setup@v2
         with:
-          version: 9.14.2
+          version: 10.22.0
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build website
+        env:
+          NODE_ENV: production
         run: pnpm build
 
       - name: Upload Build Artifact

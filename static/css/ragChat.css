@@ -1,0 +1,83 @@
+/* static/css/ragChat.css */
+
+/* Floating toggle button */
+.rag-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Chat container */
+.rag-chat-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 450px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: none; /* hidden by default */
+  flex-direction: column;
+  z-index: 9999;
+}
+
+/* Messages area */
+.rag-messages {
+  flex: 1;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+/* Individual messages */
+.rag-message {
+  margin-bottom: 8px;
+}
+
+.rag-message.assistant {
+  background: #f0f0f0;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Sources below answer */
+.rag-sources {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.rag-sources a {
+  display: block;
+  color: #0066ff;
+  text-decoration: underline;
+}
+
+/* Input area */
+.rag-input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.rag-input-container input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.rag-input-container button {
+  padding: 8px 12px;
+  border: none;
+  background: #0066ff;
+  color: white;
+  cursor: pointer;
+}

@@ -20,21 +20,25 @@
     "seqrel": "docusaurus docs:version $npm_package_version && git add . && git commit -m $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
   "dependencies": {
-    "@docusaurus/core": "3.6.3",
-    "@docusaurus/preset-classic": "3.6.3",
-    "@easyops-cn/docusaurus-search-local": "^0.45.0",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "docusaurus-plugin-image-zoom": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
+    "@easyops-cn/docusaurus-search-local": "^0.52.1",
+    "@mdx-js/react": "^3.1.1",
+    "@stdlib/blas-base-gdot": "^0.2.2",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "clsx": "^2.1.1",
+    "docusaurus-plugin-image-zoom": "^3.0.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.6.3",
-    "@docusaurus/tsconfig": "3.6.3",
-    "@docusaurus/types": "3.6.3",
-    "typescript": "~5.6.2"
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/tsconfig": "3.9.2",
+    "@docusaurus/types": "3.9.2",
+    "typescript": "~5.9.3"
   },
   "browserslist": {
     "production": [
@@ -45,11 +49,11 @@
     "development": [
       "last 3 chrome version",
       "last 3 firefox version",
-      "last 5 safari version"
+      "last 3 safari version"
     ]
   },
   "engines": {
-    "node": ">=22.0"
+    "node": ">=24.0"
   },
-  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
+  "packageManager": "pnpm@10.22.0"
 }

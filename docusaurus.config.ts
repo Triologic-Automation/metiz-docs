@@ -5,13 +5,18 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const url =
+  //process.env.NODE_ENV === "production"
+  false ? "https://github.com" : "http://localhost:3000";
+console.warn("URL --> ", url);
+
 const config: Config = {
   title: "Metiz Docs",
   tagline: "Metiz Documentation",
   favicon: "img/logos/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://github.com",
+  url: url, // "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/metiz-docs/",
@@ -22,8 +27,14 @@ const config: Config = {
   projectName: "metiz-docs", // Usually your repo name.
   trailingSlash: false,
 
-  onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
+  markdown: {
+    mermaid: true,
+    emoji: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+      onBrokenMarkdownImages: "warn",
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -66,12 +77,43 @@ const config: Config = {
     ],
   ],
 
-  plugins: ["docusaurus-plugin-image-zoom"],
+  plugins: [
+    "docusaurus-plugin-image-zoom",
+    async function ragChatPlugin() {
+      return {
+        name: "rag-chat-plugin",
+        injectHtmlTags() {
+          return {
+            headTags: [
+              {
+                tagName: "link",
+                attributes: {
+                  rel: "stylesheet",
+                  href: "css/ragChat.css",
+                },
+              },
+            ],
+            postBodyTags: [
+              {
+                tagName: "script",
+                attributes: {
+                  src: "js/ragChat.js",
+                  defer: true,
+                },
+              },
+            ],
+          };
+        },
+      };
+    },
+  ],
 
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     docs: { sidebar: { hideable: true } },
+    stylesheets: ["css/ragChat.css"],
+    scripts: [{ src: "js/ragChat.js", defer: true }],
     navbar: {
       title: "Metiz Docs",
       logo: {
