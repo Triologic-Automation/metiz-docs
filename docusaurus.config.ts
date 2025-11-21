@@ -5,18 +5,13 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const url =
-  //process.env.NODE_ENV === "production"
-  false ? "https://github.com" : "http://localhost:3000";
-console.warn("URL --> ", url);
-
 const config: Config = {
   title: "Metiz Docs",
   tagline: "Metiz Documentation",
   favicon: "img/logos/favicon.ico",
 
   // Set the production url of your site here
-  url: url, // "https://github.com",
+  url: "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/metiz-docs/",

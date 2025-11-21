@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
           normB += b[i] * b[i];
         }
         return dot / (Math.sqrt(normA) * Math.sqrt(normB));
-      }
+      } // cos(θ) = (Skalarprodukt) / (LängeA * LängeB) --> Winkel zwischen den Vektoren
 
       const topDocs = allDocs
         .map((d) => ({
@@ -126,6 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }))
         .sort((a, b) => b.score - a.score)
         .slice(0, 5);
+
+      console.warn(topDocs);
 
       const context = topDocs.map((d) => d.text).join("\n\n---\n\n");
       const sources = Array.from(new Set(topDocs.map((d) => d.url))); // remove duplicates
@@ -139,8 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
           messages: [
             {
               role: "system",
-              content:
-                "You are a professional technical assistant. Summarize context professionally. Include Sources at end.",
+              content: `You are a professional technical assistant! Give answers in the users language ${lang}! Use the provided context to answer, but use your own words!`,
             },
             {
               role: "system",
