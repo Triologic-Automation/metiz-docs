@@ -72,43 +72,12 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    "docusaurus-plugin-image-zoom",
-    async function ragChatPlugin() {
-      return {
-        name: "rag-chat-plugin",
-        injectHtmlTags() {
-          return {
-            headTags: [
-              {
-                tagName: "link",
-                attributes: {
-                  rel: "stylesheet",
-                  href: "css/ragChat.css",
-                },
-              },
-            ],
-            postBodyTags: [
-              {
-                tagName: "script",
-                attributes: {
-                  src: "js/ragChat.js",
-                  defer: true,
-                },
-              },
-            ],
-          };
-        },
-      };
-    },
-  ],
+  plugins: ["docusaurus-plugin-image-zoom"],
 
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     docs: { sidebar: { hideable: true } },
-    stylesheets: ["css/ragChat.css"],
-    scripts: [{ src: "js/ragChat.js", defer: true }],
     navbar: {
       title: "Metiz Docs",
       logo: {
